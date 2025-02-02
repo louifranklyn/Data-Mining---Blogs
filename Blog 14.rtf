@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Bold;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\b\fs32 \cf2 Blog 14: Frequent Pattern Analysis using Association Rule Mining\
+\
+Introduction\
+Frequent pattern analysis is a vital technique in data mining, particularly in discovering hidden relationships between variables within large datasets. One of the most popular methods for frequent pattern mining is Association Rule Mining, which finds interesting correlations, such as customer purchases, that frequently occur together. This blog explores how frequent pattern analysis using association rule mining can help businesses gain actionable insights.\
+\
+What is Frequent Pattern Analysis?\
+\
+Frequent pattern analysis aims to identify patterns, associations, or correlations among sets of items in large databases. These patterns can reveal hidden relationships that are valuable for decision-making. The core concept behind frequent pattern mining is to detect frequent itemsets (combinations of items) that appear together more often than expected by chance.\
+	1.	Frequent Itemsets\
+	\'95	A frequent itemset is a collection of items that appear together in a transaction database more than a minimum threshold.\
+	\'95	Example: In a retail store, frequent itemsets could include bread and butter because these items are frequently bought together.\
+	2.	Association Rules\
+	\'95	Once frequent itemsets are found, association rules are generated. These rules identify the relationships between items. For example, if bread is bought, there\'92s a high probability that butter will also be purchased.\
+	\'95	Example: Rule: \{Bread\} \uc0\u8594  \{Butter\} with a confidence of 80%.\
+\
+The Apriori Algorithm\
+\
+One of the most widely used algorithms for frequent pattern mining is the Apriori algorithm, which efficiently finds frequent itemsets and generates association rules. The algorithm follows a bottom-up approach, where it starts by identifying individual frequent items and progressively combines them to find larger itemsets.\
+	1.	Step 1: Finding Frequent 1-itemsets\
+	\'95	The algorithm first scans the dataset to find frequent 1-itemsets (individual items) that meet the minimum support threshold.\
+	2.	Step 2: Generating Candidate Itemsets\
+	\'95	The algorithm then generates candidate itemsets of size 2, 3, and so on, using frequent itemsets found in the previous step.\
+	3.	Step 3: Pruning\
+	\'95	Candidate itemsets that fail to meet the minimum support threshold are pruned, and only those that are frequent are kept for further analysis.\
+	4.	Step 4: Generating Association Rules\
+	\'95	Once frequent itemsets are found, the algorithm generates association rules with confidence levels, which show the likelihood of an item being bought given the purchase of another.\
+\
+Applications of Frequent Pattern Analysis\
+	1.	Retail: Understanding which products are often purchased together helps businesses arrange product placements effectively and run targeted promotions.\
+	2.	Healthcare: Identifying patterns in patient diagnoses can help predict and improve patient care.\
+	3.	E-commerce: Personalized recommendations, such as \'93customers who bought this item also bought\'85\'94, are based on frequent pattern mining.\
+\
+Conclusion\
+Frequent pattern analysis using association rule mining is a powerful technique for discovering hidden relationships within large datasets. By leveraging algorithms like Apriori, businesses can identify frequent itemsets and generate useful association rules, driving better business strategies, enhancing customer experience, and making data-driven decisions.}
